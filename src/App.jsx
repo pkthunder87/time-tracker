@@ -1,5 +1,9 @@
 function App() {
-  return <div className="ml-24 mt-24 text-4xl text-red-500">Time Tracker</div>;
+  return (
+    <div className="text-primary-violet bg-neutral-pale-blue ml-24 mt-24 text-4xl">
+      Time Tracker
+    </div>
+  );
 }
 
 export default App;
