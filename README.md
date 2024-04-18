@@ -15,6 +15,8 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Built with
 
+- Flexbox
+- Grid
 - Vite
 - React
 - Tailwind CSS
