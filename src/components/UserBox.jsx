@@ -15,9 +15,9 @@ function UserBox() {
         </div>
       </div>
       <div className="flex flex-col gap-[.6rem] rounded-b-lg p-5 text-[.7rem] leading-4 text-neutral-desaturated-blue">
-        <p className="-mt-[.3rem]">Daily</p>
-        <p className="text-white">Weekly</p>
-        <p>Monthly</p>
+        <p className="-mt-[.3rem] cursor-pointer hover:text-white">Daily</p>
+        <p className="cursor-pointer text-white">Weekly</p>
+        <p className="cursor-pointer hover:text-white">Monthly</p>
       </div>
     </div>
   );
