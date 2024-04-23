@@ -20,7 +20,7 @@ export default {
         'primary-light-red': 'hsl(348, 100%, 68%)',
         'primary-lime-green': 'hsl(145, 58%, 55%)',
         'primary-violet': 'hsl(264, 64%, 52%)',
-        'primary-soft-orange': ' hsl(43, 84%, 65%)',
+        'primary-yellow': ' hsl(43, 84%, 65%)',
         'neutral-very-dark-blue': 'hsl(226, 43%, 10%)',
         'neutral-dark-blue': 'hsl(235, 46%, 20%)',
         'neutral-desaturated-blue': 'hsl(235, 45%, 61%)',
