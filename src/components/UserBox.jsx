@@ -1,21 +1,21 @@
 function UserBox() {
   return (
-    <div className="row-span-2 grid h-full grid-rows-[68.5%_31.5%] rounded-lg bg-neutral-dark-blue ">
-      <div className="grid grid-rows-[43%_57%] rounded-lg bg-primary-blue p-5">
-        <div className="-ml-[.13rem] mt-[.1rem] h-[3.25rem] w-[3.25rem] rounded-full border-2">
+    <div className="grid h-[12rem] w-[87dvw] grid-rows-[64%_36%]  rounded-xl bg-neutral-dark-blue  sm:row-span-2 sm:h-full sm:w-full sm:grid-rows-[68.5%_31.5%] sm:rounded-lg ">
+      <div className="flex items-center gap-4  rounded-xl bg-primary-blue  p-7 sm:grid sm:grid-rows-[43%_57%] sm:items-baseline sm:gap-0 sm:rounded-lg sm:p-5">
+        <div className="h-[4.2rem] w-[4.2rem] rounded-full border-[3px] sm:-ml-[.13rem] sm:mt-[.1rem] sm:h-[3.25rem] sm:w-[3.25rem] sm:border-2">
           <img className="" src="./image-jeremy.png" alt="Profile image" />
         </div>
         <div>
-          <p className="text-[.58rem] leading-4 text-neutral-pale-blue">
+          <p className="text-[.9rem] leading-6 text-neutral-pale-blue sm:text-[.58rem] sm:leading-4">
             Report for
           </p>
-          <p className=" text-[1.55rem] font-light leading-[1.8rem]">
+          <p className=" text-[1.5rem] font-light leading-[1.8rem] sm:text-[1.55rem]">
             Jeremy Robson
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-[.6rem] rounded-b-lg p-5 text-[.7rem] leading-4 text-neutral-desaturated-blue">
-        <p className="-mt-[.3rem] cursor-pointer hover:text-white">Daily</p>
+      <div className="ml-2 flex justify-between rounded-b-lg p-7 pr-5 text-lg leading-4 text-neutral-desaturated-blue sm:ml-0 sm:flex-col sm:justify-normal sm:gap-[.6rem] sm:p-5 sm:text-[.7rem]">
+        <p className="cursor-pointer hover:text-white sm:-mt-[.3rem]">Daily</p>
         <p className="cursor-pointer text-white">Weekly</p>
         <p className="cursor-pointer hover:text-white">Monthly</p>
       </div>

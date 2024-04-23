@@ -24,7 +24,7 @@ function TimeBox({
         <div className="-mt-[.4rem] flex items-center justify-between text-[.7rem] font-medium">
           <p>{activity}</p>
           <img
-            className="mr-[.05rem] h-[.2rem] w-[.65rem] cursor-pointer hover:brightness-150 "
+            className="mr-[.05rem] h-[.2rem] w-[.65rem] cursor-pointer hover:brightness-150"
             src="./icon-ellipsis.svg"
             alt="suitcase"
           />

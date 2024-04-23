@@ -3,7 +3,7 @@ import UserBox from './UserBox';
 
 function AppLayout() {
   return (
-    <div className=" grid h-[48.5dvh] w-[77dvw] grid-cols-4 grid-rows-2 gap-[1.2rem] text-white">
+    <div className=" grid gap-[1.2rem] text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2">
       <UserBox />
 
       <TimeBox
