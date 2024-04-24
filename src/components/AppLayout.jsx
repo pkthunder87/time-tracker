@@ -7,7 +7,12 @@ import dataJSON from './data.json';
 function AppLayout() {
   const [durationDisplay, setDurationDisplay] = useState('daily');
 
-  console.log(dataJSON[0].timeframes.daily.current);
+  const workDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[0].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[0].timeframes.weekly
+        : dataJSON[0].timeframes.monthly;
 
   return (
     <div className=" grid gap-6 text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[1.2rem]">
@@ -20,8 +25,8 @@ function AppLayout() {
         activityIcon="icon-work.svg"
         activityColor="bg-primary-light-orange"
         activity="Work"
-        currentDuration="32"
-        previousDuration="36"
+        currentDuration={workDuration.current}
+        previousDuration={workDuration.previous}
       />
 
       <TimeBox
