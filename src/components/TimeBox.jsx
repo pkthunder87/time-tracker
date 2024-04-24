@@ -6,6 +6,7 @@ function TimeBox({
   activity,
   currentDuration,
   previousDuration,
+  durationDisplay,
 }) {
   return (
     <div
@@ -34,7 +35,13 @@ function TimeBox({
             {currentDuration}hrs
           </p>
           <p className=" mt-3 text-[.92rem] font-normal text-neutral-pale-blue group-hover:text-neutral-desaturated-blue sm:mt-[.4rem] sm:text-[.57rem]">
-            Last Week - {previousDuration}hrs
+            {durationDisplay === 'daily'
+              ? 'Yesterday'
+              : durationDisplay === 'weekly'
+                ? 'Last Week'
+                : 'Last Month'}
+            {' - '}
+            {previousDuration}hrs
           </p>
         </div>
       </div>

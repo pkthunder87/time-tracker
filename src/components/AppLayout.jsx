@@ -14,6 +14,41 @@ function AppLayout() {
         ? dataJSON[0].timeframes.weekly
         : dataJSON[0].timeframes.monthly;
 
+  const playDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[1].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[1].timeframes.weekly
+        : dataJSON[1].timeframes.monthly;
+
+  const studyDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[2].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[2].timeframes.weekly
+        : dataJSON[2].timeframes.monthly;
+
+  const exerciseDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[3].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[3].timeframes.weekly
+        : dataJSON[3].timeframes.monthly;
+
+  const socialDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[4].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[4].timeframes.weekly
+        : dataJSON[4].timeframes.monthly;
+
+  const selfCareDuration =
+    durationDisplay === 'daily'
+      ? dataJSON[5].timeframes.daily
+      : durationDisplay === 'weekly'
+        ? dataJSON[5].timeframes.weekly
+        : dataJSON[5].timeframes.monthly;
+
   return (
     <div className=" grid gap-6 text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[1.2rem]">
       <UserBox
@@ -27,6 +62,7 @@ function AppLayout() {
         activity="Work"
         currentDuration={workDuration.current}
         previousDuration={workDuration.previous}
+        durationDisplay={durationDisplay}
       />
 
       <TimeBox
@@ -34,8 +70,9 @@ function AppLayout() {
         iconPosition="-mt-[.2rem] sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-soft-blue"
         activity="Play"
-        currentDuration="10"
-        previousDuration="8"
+        currentDuration={playDuration.current}
+        previousDuration={playDuration.previous}
+        durationDisplay={durationDisplay}
       />
 
       <TimeBox
@@ -43,8 +80,9 @@ function AppLayout() {
         iconPosition="-mt-[.2rem] sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-light-red"
         activity="Study"
-        currentDuration="4"
-        previousDuration="7"
+        currentDuration={studyDuration.current}
+        previousDuration={studyDuration.previous}
+        durationDisplay={durationDisplay}
       />
 
       <TimeBox
@@ -53,8 +91,9 @@ function AppLayout() {
         iconPosition=" sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-lime-green"
         activity="Exercise"
-        currentDuration="4"
-        previousDuration="5"
+        currentDuration={exerciseDuration.current}
+        previousDuration={exerciseDuration.previous}
+        durationDisplay={durationDisplay}
       />
 
       <TimeBox
@@ -63,8 +102,9 @@ function AppLayout() {
         iconPosition="sm:-mt-2 sm:mr-2 -mt-3 mr-3"
         activityColor="bg-primary-violet"
         activity="Social"
-        currentDuration="5"
-        previousDuration="10"
+        currentDuration={socialDuration.current}
+        previousDuration={socialDuration.previous}
+        durationDisplay={durationDisplay}
       />
 
       <TimeBox
@@ -72,8 +112,9 @@ function AppLayout() {
         iconSize="sm:h-10 sm:w-10 h-16 w-16"
         activityColor="bg-primary-yellow"
         activity="Self Care"
-        currentDuration="2"
-        previousDuration="2"
+        currentDuration={selfCareDuration.current}
+        previousDuration={selfCareDuration.previous}
+        durationDisplay={durationDisplay}
       />
     </div>
   );
