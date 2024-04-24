@@ -3,7 +3,7 @@ import UserBox from './UserBox';
 
 function AppLayout() {
   return (
-    <div className=" grid gap-[1.2rem] text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2">
+    <div className=" grid gap-6 text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[1.2rem]">
       <UserBox />
 
       <TimeBox
@@ -16,7 +16,7 @@ function AppLayout() {
 
       <TimeBox
         activityIcon="icon-play.svg"
-        iconPosition="-mt-[.2rem] mr-[.6rem]"
+        iconPosition="-mt-[.2rem] sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-soft-blue"
         activity="Play"
         currentDuration="10"
@@ -25,7 +25,7 @@ function AppLayout() {
 
       <TimeBox
         activityIcon="icon-study.svg"
-        iconPosition="-mt-[.2rem] mr-[.6rem]"
+        iconPosition="-mt-[.2rem] sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-light-red"
         activity="Study"
         currentDuration="4"
@@ -34,8 +34,8 @@ function AppLayout() {
 
       <TimeBox
         activityIcon="icon-exercise.svg"
-        iconSize="h-8 w-12"
-        iconPosition=" mr-[.6rem]"
+        iconSize="sm:h-8 sm:w-12 h-[3.4rem] w-20"
+        iconPosition=" sm:mr-[.6rem] mr-4"
         activityColor="bg-primary-lime-green"
         activity="Exercise"
         currentDuration="4"
@@ -44,8 +44,8 @@ function AppLayout() {
 
       <TimeBox
         activityIcon="icon-social.svg"
-        iconSize="h-14 w-12"
-        iconPosition="-mt-2 mr-2"
+        iconSize="sm:h-14 sm:w-12 h-[5.6rem] w-20"
+        iconPosition="sm:-mt-2 sm:mr-2 -mt-3 mr-3"
         activityColor="bg-primary-violet"
         activity="Social"
         currentDuration="5"
@@ -54,7 +54,7 @@ function AppLayout() {
 
       <TimeBox
         activityIcon="icon-self-care.svg"
-        iconSize="h-10 w-10"
+        iconSize="sm:h-10 sm:w-10 h-16 w-16"
         activityColor="bg-primary-yellow"
         activity="Self Care"
         currentDuration="2"
