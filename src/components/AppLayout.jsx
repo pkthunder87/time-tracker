@@ -1,10 +1,20 @@
+import { useState } from 'react';
 import TimeBox from './TimeBox';
 import UserBox from './UserBox';
 
+import dataJSON from './data.json';
+
 function AppLayout() {
+  const [durationDisplay, setDurationDisplay] = useState('daily');
+
+  console.log(dataJSON[0].timeframes.daily.current);
+
   return (
     <div className=" grid gap-6 text-white sm:h-[48.5dvh] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[1.2rem]">
-      <UserBox />
+      <UserBox
+        setDurationDisplay={setDurationDisplay}
+        durationDisplay={durationDisplay}
+      />
 
       <TimeBox
         activityIcon="icon-work.svg"
