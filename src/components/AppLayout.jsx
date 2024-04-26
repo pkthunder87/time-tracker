@@ -50,7 +50,7 @@ function AppLayout() {
         : dataJSON[5].timeframes.monthly;
 
   return (
-    <div className=" grid gap-6 text-white sm:h-[36dvw] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[2.1dvw] xl:w-[77.2dvw]">
+    <div className=" grid gap-6 text-white sm:h-[36dvw] sm:w-[77dvw] sm:grid-cols-4 sm:grid-rows-2 sm:gap-[2.1dvw] md:h-[50dvw] md:w-[90dvw] xl2:h-[36dvw] xl2:w-[77.2dvw] ">
       <UserBox
         setDurationDisplay={setDurationDisplay}
         durationDisplay={durationDisplay}

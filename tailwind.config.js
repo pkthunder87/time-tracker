@@ -8,9 +8,10 @@ export default {
     screens: {
       sm: '425px',
       md: '750px',
-      lg: '1024px',
-      xl: '1280px',
-      xl2: '1440px',
+      lg: '900px',
+      xl: '1030px',
+      xl2: '1230px',
+      xl3: '1440px',
     },
     extend: {
       colors: {
