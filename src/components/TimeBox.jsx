@@ -34,7 +34,7 @@ function TimeBox({
             alt="suitcase"
           />
         </div>
-        <div className="flex justify-between md:block">
+        <div className="flex justify-between sm:block">
           <p className="mt-3 text-[2.15rem] md:mt-[1.12rem] xl:mt-[2.8rem] xl:text-[3.5rem]">
             {currentDuration}hrs
           </p>

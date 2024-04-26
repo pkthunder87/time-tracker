@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply text-[100%] md:text-[125%] lg:text-[140%] xl:text-[100%] xl2:text-[100%];
+    @apply text-[100%] sm:text-[84%] md:text-[125%] lg:text-[140%] xl:text-[100%] xl2:text-[100%];
   }
 
   /* Basic styles for mobile and desktop */

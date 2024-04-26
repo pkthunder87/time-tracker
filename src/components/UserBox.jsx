@@ -15,7 +15,7 @@ function UserBox({ setDurationDisplay, durationDisplay }) {
       : 'text-neutral-desaturated-blue';
 
   return (
-    <div className="grid h-[12rem] w-[87dvw] grid-rows-[64%_36%]  rounded-xl bg-neutral-dark-blue  md:row-span-2 md:h-full md:w-full md:grid-rows-[68.5%_31.5%] md:rounded-lg xl:grid-rows-[68%_32%] xl:rounded-2xl ">
+    <div className="grid h-[12rem] w-[87dvw] grid-rows-[64%_36%]  rounded-xl bg-neutral-dark-blue  sm:col-span-2 md:col-span-1 md:row-span-2 md:h-full md:w-full md:grid-rows-[68.5%_31.5%] md:rounded-lg xl:grid-rows-[68%_32%] xl:rounded-2xl">
       <div className="flex items-center gap-4  rounded-xl bg-primary-blue  p-7 md:grid md:grid-rows-[43%_57%] md:items-baseline md:gap-0 md:rounded-lg md:p-5 xl:rounded-2xl xl:p-8">
         <div className="h-[4.2rem] w-[4.2rem] rounded-full border-[3px] md:-ml-[.13rem] md:mt-[.1rem] md:h-[3.25rem] md:w-[3.25rem] md:border-2 xl:h-[5.3rem] xl:w-[5.3rem] xl:border-[3px]">
           <img className="" src="./image-jeremy.png" alt="Profile image" />

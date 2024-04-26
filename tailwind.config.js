@@ -6,7 +6,7 @@ export default {
       sans: 'Rubik',
     },
     screens: {
-      sm: '425px',
+      sm: '501px',
       md: '750px',
       lg: '900px',
       xl: '1030px',
