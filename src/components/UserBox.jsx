@@ -34,7 +34,6 @@ function UserBox({ setDurationDisplay, durationDisplay }) {
           onClick={() => {
             if (durationDisplay === 'daily') return;
             setDurationDisplay(() => 'daily');
-            console.log(durationDisplay);
           }}
           className={`${dailyHighlight} cursor-pointer hover:text-white md:-mt-[.3rem] xl:-mt-[2px]`}
         >
@@ -44,7 +43,6 @@ function UserBox({ setDurationDisplay, durationDisplay }) {
           onClick={() => {
             if (durationDisplay === 'weekly') return;
             setDurationDisplay(() => 'weekly');
-            console.log(durationDisplay);
           }}
           className={`${weeklyHighlight} cursor-pointer hover:text-white`}
         >
@@ -54,7 +52,6 @@ function UserBox({ setDurationDisplay, durationDisplay }) {
           onClick={() => {
             if (durationDisplay === 'monthly') return;
             setDurationDisplay(() => 'monthly');
-            console.log(durationDisplay);
           }}
           className={`${monthlyHighlight} cursor-pointer hover:text-white`}
         >
