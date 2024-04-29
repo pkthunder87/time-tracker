@@ -9,6 +9,6 @@
 
   /* Basic styles for mobile and desktop */
   body {
-    @apply flex h-[100dvh] w-[100dvw] items-center justify-center bg-neutral-very-dark-blue antialiased;
+    @apply flex h-fit w-[100dvw] items-center justify-center  bg-neutral-very-dark-blue py-12 antialiased sm:h-[100dvh] sm:py-0;
   }
 }
